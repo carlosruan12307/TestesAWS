@@ -1,0 +1,6 @@
+services:
+  angular-teste:
+        image: angular-teste
+        build: .
+        ports:
+          - 8081:80
