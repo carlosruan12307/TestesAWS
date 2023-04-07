@@ -1,0 +1,37 @@
+.container-inputs,
+.container-btn-login {
+  /* border: 3px solid blue; */
+  width: 75%;
+}
+.fa-style {
+  color: black;
+
+  font-size: 1.5em;
+}
+
+h1 {
+  color: white;
+}
+.btn-login {
+  border: 3px solid green;
+  border-radius: 3em;
+  width: 40%;
+  font-size: 1.5em;
+  margin: 1em;
+}
+form {
+  background-color: black;
+  height: 70%;
+  width: 30%;
+}
+.form-control {
+  border-radius: 2em;
+}
+.forgot {
+  margin-right: auto;
+}
+.form-floating {
+  display: flex;
+}
+.input-group-text {
+}

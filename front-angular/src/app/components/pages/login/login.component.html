@@ -1,0 +1,75 @@
+<div class="d-flex justify-content-center align-items-center h-100">
+  <form
+    class="d-flex flex-column align-items-center justify-content-center"
+    [formGroup]="formC"
+    #formDir="ngForm"
+  >
+    <h1 class="m-5">LOGAR NO SISTEMA</h1>
+    <div class="container-inputs">
+      <div class="input-group">
+        <div class="input-group-text">
+          <i class="fa-solid fa-user fa-style"></i>
+        </div>
+        <div class="form-floating">
+          <input
+            id="teste"
+            class="form-control"
+            formControlName="usuario"
+            placeholder="usuario"
+          />
+
+          <label for="teste" class="form-label">usuario</label>
+        </div>
+      </div>
+
+      <h5
+        *ngIf="this.usuario?.errors?.['required']"
+        class="text-danger mt-2 mb-2"
+      >
+        usuario precisa existir
+      </h5>
+      <div class="input-group">
+        <div class="input-group-text">
+          <i class="fa-solid fa-lock fa-style"></i>
+        </div>
+        <div class="form-floating">
+          <input
+            id="teste"
+            class="form-control"
+            formControlName="senha"
+            placeholder="senha"
+          />
+          <label for="teste" class="form-label">senha</label>
+        </div>
+      </div>
+
+      <h5
+        *ngIf="this.senha?.errors?.['required']"
+        class="text-danger mt-2 mb-2"
+      >
+        senha precisa existir
+      </h5>
+    </div>
+    <div
+      class="container-btn-login d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="d-flex w-100">
+        <div class="form-check ms-2 mt-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label text-white" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+        <button class="ms-auto me-2 mt-2 btn btn-outline-light">
+          Forgot Password?
+        </button>
+      </div>
+      <button class="btn-login btn btn-outline-dark text-white">login</button>
+    </div>
+  </form>
+</div>
