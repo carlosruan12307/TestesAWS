@@ -6,7 +6,7 @@
   >
     <h1 class="m-5">LOGAR NO SISTEMA</h1>
     <div class="container-inputs">
-      <div class="input-group">
+      <div class="input-group mb-3">
         <div class="input-group-text">
           <i class="fa-solid fa-user fa-style"></i>
         </div>
@@ -22,13 +22,10 @@
         </div>
       </div>
 
-      <h5
-        *ngIf="this.usuario?.errors?.['required']"
-        class="text-danger mt-2 mb-2"
-      >
+      <h5 *ngIf="this.usuario?.errors?.['required']" class="text-danger mb-3">
         usuario precisa existir
       </h5>
-      <div class="input-group">
+      <div class="input-group mb-3">
         <div class="input-group-text">
           <i class="fa-solid fa-lock fa-style"></i>
         </div>
